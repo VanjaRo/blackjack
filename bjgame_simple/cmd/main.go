@@ -94,10 +94,6 @@ func EndHand(gs GameState) GameState {
 	fmt.Println("PLayer: ", gs.Player, "\nScore", pScore)
 	fmt.Println("Dealer: ", gs.Dealer, "\nScore", dScore)
 	switch {
-	// case pScore == 0:
-	// 	fmt.Print("You busted")
-	// case dScore == 0:
-	// 	fmt.Print("Dealer busted")
 	case pScore > dScore || dScore == 0:
 		fmt.Print("You win!")
 	case pScore < dScore || pScore == 0:
